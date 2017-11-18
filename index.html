@@ -14,11 +14,19 @@ layout: default
     <h2>Projects</h2>
 
     <p>
-      <ol>
-        <li>Clone
-          <a href="https://github.com/wemake-services/jekyll-theme-hackcss">this repository</a>
+      <ul>
+      {% for repository in site.github.public_repositories %}
+        <li>
+          <a href="{{ repository.html_url }}">{{ repository.name }}</a>
+          {% if repository.description %}
+          <br />
+          {{ repository.description }}
+          {% endif %}
+          <br />
+          stars: {{ repository.stargazers_count }} forks: {{ repository.forks }}
         </li>
-      </ol>
+      {% endfor %}
+      </ul>
 
     </p>
   </section>
@@ -33,3 +41,9 @@ layout: default
   </section>
   -->
 </div>
+
+<!-- Uncomment this if you want to debug what is in each repository object
+<script>
+  var repos = {{ site.github.public_repositories | jsonify }};
+</script>
+-->

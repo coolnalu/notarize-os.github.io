@@ -42,4 +42,6 @@ social:
 
 # Plugins
 plugins:
-  - jekyll-seo-tag
+  - "jekyll-seo-tag"
+  - "jekyll-github-metadata"
+
