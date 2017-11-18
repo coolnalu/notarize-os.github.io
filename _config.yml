@@ -1,0 +1,45 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Notarize open source
+description: > # this means to ignore newlines until "baseurl:"
+  A minimalistic theme for Jekyll, based on hack.css
+repository: https://github.com/notarize-os/notarize-os.github.io
+url: https://notarize-os.github.io
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  style: compressed
+
+# Theme settings
+theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
+
+# Customizations
+# your_name: wemake.services
+# email: mail@sobolevn.me
+
+navigation:
+  - text: Home
+    url: /
+  - text: Code of Conduct
+    url: /code-of-conduct
+
+social:
+  - service: github
+    username: notarize-os
+    link: https://github.com/notarize-os
+  - service: twitter
+    username: notarize
+    link: https://twitter.com/notarize
+
+# Plugins
+gems:
+  - jekyll-seo-tag
