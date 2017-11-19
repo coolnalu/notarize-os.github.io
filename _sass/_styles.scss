@@ -12,6 +12,12 @@
     padding-top: 20px;
   }
 
+  // index.html
+
+  @at-root .hack &-repo-item {
+    padding-bottom: $spacing-unit;
+  }
+
   // footer.html
 
   @at-root body &-footer {

@@ -10,6 +10,7 @@ title: Notarize open source
 description: > # this means to ignore newlines until "baseurl:"
   A minimalistic theme for Jekyll, based on hack.css
 repository: notarize-os/notarize-os.github.io
+repository_url: https://www.github.com/notarize-os/notarize-os.github.io
 url: https://notarize-os.github.io
 
 # Build settings

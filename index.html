@@ -7,16 +7,19 @@ layout: default
   <section>
     <h1>Notarize open source</h1>
 
-    <p>A collection of open source projects by Notarize</p>
+    <p>Notarize engineers use; contribute to and release open source every day
+    across multiple platforms.</p>
+
+    <p>Below are the open source projects by maintained by Notarize</p>
   </section>
 
   <section>
-    <h2>Projects</h2>
+    <h2>Repos</h2>
 
     <p>
       <ul>
       {% for repository in site.github.public_repositories %}
-        <li>
+        <li class="t-hackcss-repo-item">
           <a href="{{ repository.html_url }}">{{ repository.name }}</a>
           {% if repository.description %}
           <br />
@@ -24,8 +27,6 @@ layout: default
           {% endif %}
           <br />
           stars: {{ repository.stargazers_count }} forks: {{ repository.forks }}
-          <br />
-          <br />
         </li>
       {% endfor %}
       </ul>
